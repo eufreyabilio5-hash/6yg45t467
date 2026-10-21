@@ -376,6 +376,33 @@
 
         /* CARD DESTAQUE */
 
+        .premio-badge {
+            background: linear-gradient(135deg, #dc2626, #b91c1c) !important;
+            color: #fff !important;
+            font-size: 12px !important;
+            padding: 6px 16px !important;
+            border-radius: 20px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            animation: blink-red 1s ease-in-out infinite;
+        }
+
+        .trust-blink {
+            font-size: 9px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #fff;
+            animation: blink-red 0.8s ease-in-out infinite;
+            display: block;
+        }
+
+        @keyframes blink-red {
+            0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(220, 38, 38, 0.8); }
+            50% { opacity: 0.3; box-shadow: 0 0 2px rgba(220, 38, 38, 0.2); }
+        }
+
         .card-highlight {
             grid-column: 1 / -1;
             background: linear-gradient(135deg, #141414, #1a0a2e);
@@ -1090,7 +1117,7 @@
                     </div>
                     <span class="badge-discount" style="display:none;"></span>
                     <span class="badge-stock"><i class="fa-solid fa-circle" style="color:#fbbf24;font-size:6px;margin-right:4px;"></i> 13 left</span>
-                    <span class="highlight-badge">⭐ DESTAQUE</span>
+                    <span class="highlight-badge premio-badge">🏆 PRÊMIO<br><span class="trust-blink">100% DE CONFIANÇA</span></span>
                 </div>
                 <div class="card-body">
                     <div class="title-row">
@@ -2178,7 +2205,7 @@
             <div class="links">
                 <a href="index.html#">Terms &amp; License</a>
                 <a href="index.html#">Privacy Policy</a>
-                <a href="https://t.me/LinksxStore" target="_blank" rel="noopener noreferrer">Contact</a>
+                <a href="https://t.me/Dmkhalifa" target="_blank" rel="noopener noreferrer">Contact</a>
             </div>
         </div>
     </div>
@@ -2216,7 +2243,7 @@
         // ============================================================
         // ===== CONFIGURAÇÃO =====
         // ============================================================
-        const TELEGRAM_USERNAME = "LinksxStore";
+        const TELEGRAM_USERNAME = "Dmkhalifa";
 
         // ============================================================
         // ===== TIMER - 15 MINUTOS =====
