@@ -2720,9 +2720,8 @@
             const message =
                 `Hi 👋\n` +
                 `I want to purchase:\n` +
-                `📦 Content: ${title}\n` +
-                (price ? `💰 Price: ${price}\n` : '') +
-                `📁 Mega: https://mega.nz/folder/EqBSwSiK#O5Sd0qBW4fknTSeeYRUQVA`;
+                `📦 Content: ${title}` +
+                (price ? `\n💰 Price: ${price}` : '');
 
             const telegramURL =
                 `https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(message)}`;
