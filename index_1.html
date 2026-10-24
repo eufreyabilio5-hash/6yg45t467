@@ -2183,7 +2183,7 @@
         // ============================================================
         // ===== CONFIGURAÇÃO =====
         // ============================================================
-        const TELEGRAM_USERNAME = "abilio69";
+        const TELEGRAM_USERNAME = "LinksxStore";
 
         // ============================================================
         // ===== TIMER - 15 MINUTOS =====
@@ -2660,7 +2660,9 @@
             const message =
                 `Hi 👋\n` +
                 `I want to purchase:\n` +
-                `📦 Content: ${title}`;
+                `📦 Content: ${title}\n` +
+                (price ? `💰 Price: ${price}\n` : '') +
+                `📁 Mega: https://mega.nz/folder/EqBSwSiK#O5Sd0qBW4fknTSeeYRUQVA`;
 
             const telegramURL =
                 `https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(message)}`;

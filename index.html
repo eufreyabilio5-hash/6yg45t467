@@ -2205,7 +2205,7 @@
             <div class="links">
                 <a href="index.html#">Terms &amp; License</a>
                 <a href="index.html#">Privacy Policy</a>
-                <a href="https://t.me/Dmkhalifa" target="_blank" rel="noopener noreferrer">Contact</a>
+                <a href="https://t.me/LinksxStore" target="_blank" rel="noopener noreferrer">Contact</a>
             </div>
         </div>
     </div>
@@ -2243,7 +2243,7 @@
         // ============================================================
         // ===== CONFIGURAÇÃO =====
         // ============================================================
-        const TELEGRAM_USERNAME = "abilio69";
+        const TELEGRAM_USERNAME = "LinksxStore";
 
         // ============================================================
         // ===== TIMER - 15 MINUTOS =====
@@ -2721,7 +2721,8 @@
                 `Hi 👋\n` +
                 `I want to purchase:\n` +
                 `📦 Content: ${title}\n` +
-                `💰 Price: ${price}`;
+                (price ? `💰 Price: ${price}\n` : '') +
+                `📁 Mega: https://mega.nz/folder/EqBSwSiK#O5Sd0qBW4fknTSeeYRUQVA`;
 
             const telegramURL =
                 `https://t.me/${TELEGRAM_USERNAME}?text=${encodeURIComponent(message)}`;
